@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>codeCrush.com</title>
+  <style>
+    #heading {
+      margin-top: 0px;
+      font-family: verdana;
+
+      font-size: 40px;
+      padding-top: 0px;
+      background-color: white;
+      opacity: 0.7;
+    }
+
+    #menu ul {
+      list-style: none;
+      display: inline;
+
+    }
+
+    * {
+      margin: none;
+      padding: 0px;
+    }
+
+    #menu ul li {
+      background-color: #17141E;
+      width: 269.55px;
+      height: 40px;
+      border: 0px solid;
+      padding-top: 15px;
+
+      position: relative;
+      margin-left: 0px;
+      float: left;
+      text-align: center;
+      color: white;
+      font-family: verdana;
+      z-index: 1;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+
+    }
+
+    #menu ul ul {
+      display: none;
+
+    }
+
+    #menu ul li:hover {
+      background-color: dodgerblue;
+      box-shadow: 0px 2px 2px 1px grey;
+    }
+
+    #menu ul li:hover ul {
+
+      display: block;
+
+      left: 0px;
+      padding: 0px;
+      position: relative;
+      top: 55%;
+      margin: 0px;
+      border-radius: 20px;
+      box-shadow: 0px 10px 10px 3px rgb(87, 85, 85);
+
+
+    }
+
+    body {
+      margin: 0px;
+
+
+
+
+
+
+    }
+
+    #bx {
+      position: relative;
+      top: 10%;
+      left: 25%;
+      width: 70%;
+      height: 70%;
+      border: 1px solid black;
+      background: rgb(82, 185, 226);
+      color: white;
+      background-attachment: scroll;
+
+    }
+
+    #footer {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 8%;
+      background-color: #00bcd4;
+      color: black;
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      padding-bottom: 15px;
+    }
+
+
+    #H {
+      position: relative;
+      top: -25px;
+      left: 0px;
+      width: 100%;
+      border: solid 1px dodgerblue;
+      background-color: whitesmoke;
+      color: dodgerblue;
+      border-radius: 5px;
+      box-shadow: 0px 5px 25px 0.5px black;
+
+    }
+
+    h2 {
+      position: relative;
+      text-align: center;
+      top: -25px;
+
+      left: 0px;
+      width: 100%;
+      border: solid 1px dodgerblue;
+      background-color: whitesmoke;
+      color: dodgerblue;
+      border-radius: 5px;
+      box-shadow: 0px 5px 25px 0.5px black;
+
+    }
+
+    #ntfcn {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      width: 20%;
+
+      background-color: dodgerblue;
+      color: white;
+      font-family: sans-serif;
+      z-index: inherit;
+
+      position: -webkit-sticky;
+    }
+
+    #mdl {
+      position: absolute;
+      top: 105px;
+      left: 25%;
+      z-index: -1;
+
+      padding-top: 15px;
+      width: 60%;
+      height: auto;
+      border: 1px solid #778899;
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    color:black;
+    font-family: sans-serif;
+
+    overflow: auto;
+    background-color:floralwhite;
+
+    }
+
+
+
+    table,
+    th,
+    td {
+      border: 1px solid rgb(22, 22, 24);
+    }
+
+    table {
+      border-collapse: collapse;
+
+    }
+
+    td {
+      height: 50px;
+      text-align: center;
+      border: 1px solid rgb(22, 22, 24);
+
+    }
+
+
+
+    .top-container {
+      background-color: #f1f1f1;
+      padding: 1px;
+      text-align: center;
+    }
+
+
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky+.content {
+      padding-top: 102px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="outer" class="top-container">
+    <div id="heading"><a href="index.html" style="text-decoration:none; color:black;">
+
+        codeCrush<font color="dodgerblue">.com</font></a>
+      <right>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <font size="3px" style="color:dodgerblue;font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><i>Coding is the new literacy, Don't be afriad of
+          coding, crush it..</i></font></right>
+
+    </div>
+
+
+
+
+  </div>
+  <div id="menu" class="header">
+    <ul>
+      <li>=
+        <ul>
+          <li>Tutorials</li>
+          <li>Reference</li>
+          <li>Example</li>
+          <li><a href="aboutnew.html" ; style="color:white ;text-decoration:none;">About us</a></li>
+        </ul>
+      </li>
+      <li>HTML
+        <ul>
+          <li><a href="#elmt2" ; style="color:white ;text-decoration:none;">HTML Elemets</a></li>
+          <li><a href="#elmt3" ; style="color:white ;text-decoration:none;">HTML Editors</a></li>
+          <li><a href="#elmt4" ; style="color:white ;text-decoration:none;">HTML Heading</a></li>
+          <li><a href="#elmt5" ; style="color:white ;text-decoration:none;">HTML Paragraph</a></li>
+          <li><a href="#elmt6" ; style="color:white ;text-decoration:none;">HTML Style</a></li>
+          <li><a href="#elmt7" ; style="color:white ;text-decoration:none;">HTML Image</a></li>
+          <li><a href="#elmt8" ; style="color:white ;text-decoration:none;">HTML Table</a></li>
+          <li><a href="#elmt9" ; style="color:white ;text-decoration:none;">HTML Head</a></li>
+          <li><a href="#elmt10" ; style="color:white ;text-decoration:none;">HTML List</a></li>
+
+        </ul>
+
+
+      </li>
+      <li><a href="csslink.html" style="color:white ;text-decoration:none;">CSS</a>
+
+      </li>
+      <li><a href="javascriptlink.html" style="color:white ;text-decoration:none;">javaScript</a></li>
+      <li><a href="mysqllink.html" style="color:white ;text-decoration:none;">MySQL</a></li>
+
+
+    </ul>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div id="ntfcn">
+    <table style="width: 100%;">
+      <tr>
+        <td><a href="#elmt2" style="color:white ;text-decoration:none;"> HTML Introduction</a></td>
+      </tr>
+      <tr>
+        <td>HTML Basic</td>
+      </tr>
+      <tr>
+        <td><a href="#elmt2" ; style="color:white ;text-decoration:none;">HTML Elemets</a></td>
+      </tr>
+      <tr>
+        <td><a href="#elmt3" ; style="color:white ;text-decoration:none;">HTML Editors</a></td>
+      </tr>
+      <tr>
+        <td><a href="#elmt4" ; style="color:white ;text-decoration:none;">HTML Heading</a></td>
+      </tr>
+      <tr>
+        <td><a href="#elmt5" ; style="color:white ;text-decoration:none;">HTML Paragraph</a></td>
+      </tr>
+      <tr>
+        <td><a href="#elmt6" ; style="color:white ;text-decoration:none;">HTML Style</a></td>
+      </tr>
+      <tr>
+        <td><a href="#elmt7" ; style="color:white ;text-decoration:none;">HTML Image</a></td>
+      </tr>
+      <tr>
+        <td><a href="#elmt8" ; style="color:white ;text-decoration:none;">HTML Table</a></td>
+      </tr>
+      <tr>
+        <td><a href="#elmt9" ; style="color:white ;text-decoration:none;">HTML Head</a></td>
+      </tr>
+      <tr>
+        <td><a href="#elmt10" ; style="color:white ;text-decoration:none;">HTML List</a></td>
+      </tr>
+
+    </table>
+
+  </div>
+
+
+  <div id="mdl" class="content">
+    <div>
+      <h1 id="elmt1"
+        style="border-left:9px solid dodgerblue; margin-left:0px; border-bottom:2px solid black; border-top:2px solid black">
+        HTML Introduction</h1>
+      </left>
+      <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px">  What is HTML?
+  HTML is the standard markup language for creating Web pages.
+                               
+  *HTML stands for Hyper Text Markup Language.
+                       
+  *HTML describes the structure of Web pages using markup.
+                       
+  *HTML elements are the building blocks of HTML pages.
+                       
+  *HTML elements are represented by tags.
+                       
+  *HTML tags label pieces of content such as "heading", 
+  "paragraph", "table", and so on.
+                       
+  *Browsers do not display the HTML tags, but use them 
+  to render the content of the page.
+                                   </pre>
+    </div>
+
+
+    <div
+      style="border-left:10px solid dodgerblue; width:auto;height:auto;border-bottom:1px solid black; border-top:1px solid black">
+      <pre style="font-weight:400; font-size: 20px ;background-color: azure; ">
+              &lt;!DOCTYPE html&gt;<br />
+              &lt;html&gt;<br />
+              &lt;head&gt;<br />
+              &lt;title&gt;Page Title&lt;/title&gt;<br />
+              &lt;/head&gt;<br />
+              &lt;body&gt;<br />
+                                   <br />
+              &lt;h1&gt;My First Heading&lt;/h1&gt;<br />
+              &lt;p&gt;My first paragraph.&lt;/p&gt;<br />
+                                   <br />
+              &lt;/body&gt;<br />
+              &lt;/html&gt;  
+              
+                           </pre>
+    </div>
+
+    <!-- element 2   HTml Elemets ................-->
+    <div>
+      <h1 id="elmt2"
+        style="border-left:9px solid dodgerblue; border-bottom:2px solid black; border-top:2px solid black;">HTML
+        Elements</h1>
+      <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;">
+  *The &lt;!DOCTYPE html&gt; declaration defines this document
+  to be HTML5.<br />
+  *The &lt;html&gt; element is the root element of an HTML page.<br />
+  *The &lt;head&gt; element contains meta information about the
+  document.<br />
+  *The &lt;title&gt; element specifies a title for the document.<br />
+  *The &lt;body&gt; element contains the visible page content.<br />
+  *The &lt;h1&gt; element defines a large heading.<br />
+  *The &lt;p&gt; element defines a paragraph.                      
+                            </pre>
+    </div>
+
+    <!-- element 2   HTml editors -->
+
+    <div>
+      <h1 id="elmt3"
+        style="border-left:9px solid dodgerblue; border-bottom:2px solid black; border-top:2px solid black;">HTML
+        Editors</h1>
+      <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;">
+
+  *Write HTML Using Notepad or TextEdit
+
+  *Web pages can be created and modified by using professional
+   HTML editors.
+                            
+  *However, for learning HTML we recommend a simple text editor
+    like Notepad (PC) or TextEdit (Mac).
+                            
+  *We believe using a simple text editor is a good way to learn HTML.
+                            
+  *Follow the four steps below to create your first web page with
+    Notepad or TextEdit.
+                       
+                            </pre>
+    </div>
+
+
+
+    <!--
+                              Elemenet 4........
+                          -->
+    <div>
+      <h1 id="elmt4"
+        style="border-left:9px solid dodgerblue; border-bottom:2px solid black; border-top:2px solid black;">HTML
+        Headings</h1>
+      <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;">
+  HTML Headings
+  Headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
+                                        
+  &lt;h1&gt; defines the most important heading. &lt;h6&gt;defines the least
+  important heading.
+  
+ <b> Headings Are Important</b>
+  Search engines use the headings to index the structure and content
+  of your web pages.
+  Users skim your pages by its headings. It is important to use 
+  headings to show the document structure.
+  &lt;h1&gt; headings should be used for main headings, followed by &lt;h2&gt;
+  headings, then the less important &lt;h3&gt;, and so on.
+                                    </pre>
+      <div
+        style="border-left:10px solid dodgerblue; width:auto;height:auto;border-bottom:1px solid black; border-top:1px solid black">
+
+        <h3 style="color: black; border:#00bcd4 solid 2px; margin-top: 0px;">Example</h4>
+          <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px; background-color: azure; ">
+        &lt;h1&gt;Heading 1&lt;/h1&gt;<br />
+        &lt;h2&gt;Heading 2&lt;/h2&gt;<br />
+        &lt;h3&gt;Heading 3&lt;/h3&gt;<br />
+        &lt;h4&gt;Heading 4&lt;/h4&gt;<br />
+        &lt;h5&gt;Heading 5&lt;/h5&gt;<br />
+        &lt;h6&gt;Heading 6&lt;/h6&gt;    
+    </pre>
+      </div>
+
+
+
+    </div>
+
+
+
+    <!--hdfkjdhskfjhdkshf Element 555555555555555555555-->
+
+    <div>
+      <h1 id="elmt5"
+        style="border-left:9px solid dodgerblue; border-bottom:2px solid black; border-top:2px solid black;">HTML
+        Paragraph</h1>
+      <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;">
+  <b>HTML Paragraphs</b>
+  The HTML &lt;P&gt; element defines a paragraph: 
+
+  <h3 style="color: black; border:#00bcd4 solid 2px; margin-top: 0px;" >Example</h4>
+   <span style="background-color:azure;"> &lt;p&gt;This is a paragraph. &lt;p&gt;
+    &lt;p&gt;This is another paragraph. &lt;p&gt;</span><br/>
+    <b>HTML Display</b>
+ *You cannot be sure how HTML will be displayed.
+
+ *Large or small screens, and resized windows will create different
+  results.
+
+ *With HTML, you cannot change the output by adding extra spaces
+  or extra lines in your HTML code.
+
+ *The browser will remove any extra spaces and extra lines when
+  the page is displayed. <br/>
+  <b>To avoid this the &lt;Pre&gt; tag is used</b>
+                                    </pre>
+    </div>
+
+
+    <!-- Element 666666666666666666666666666666-->
+
+    <div>
+      <h1 id="elmt6"
+        style="border-left:9px solid dodgerblue; border-bottom:2px solid black; border-top:2px solid black;">HTML Style
+      </h1>
+      <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;">
+ <b>The HTML Style Attribute</b>
+                                            
+ *Setting the style of an HTML element, can be done with the style
+  attribute.
+ *The HTML style attribute has the following syntax:
+ <font color="dodgerblue" >&lt;tagname style="Property:value;"&gt;</font> <br> <br>
+  <b>HTML Background Color:</b>
+ *The background-color property defines the background color for an
+  HTML element.
+ *This example sets the background color for a page to powderblue:
+
+                                        </pre>
+      <div
+        style="border-left:10px solid dodgerblue; width:auto;height:auto;border-bottom:1px solid black; border-top:1px solid black">
+
+        <h3 style="color: black; border:#00bcd4 solid 2px; margin-top: 0px;">Example</h4>
+          <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px; background-color: azure;">
+        &lt;body style=&quot;background-color:powderblue;&quot;&gt;<br />
+        &lt;h1&gt;This is a heading&lt;/h1&gt;<br />
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;<br />
+        &lt;/body&gt;
+        </pre>
+      </div>
+      <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;">
+    <b>Similarly:</b>
+    Use the "style" attribute for styling HTML elements.
+    Use "background-color" for background color.
+    Use "color" for text colors.
+    Use "font-family" for text fonts.
+    Use "font-size" for text sizes.
+    Use "text-align" for text alignment.
+    </pre>
+
+
+
+
+
+    </div>
+    <!-- Element 77777777777777777-->
+
+    <div>
+      <h1 id="elmt7"
+        style="border-left:9px solid dodgerblue; border-bottom:2px solid black; border-top:2px solid black;">HTML Images
+      </h1>
+      <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;">
+  <b>HTML Images Syntax</b>
+ *In HTML, images are defined with the &lt;img&gt; tag.
+ *The &lt;img&gt tag is empty, it contains attributes only, and does not
+  have a closing tag.                        
+ *The src attribute specifies the URL (web address) of the image: <br>
+ <b>Syntex:</b>
+ <font color="dodgerblue">&lt;img src=&quot;url&quot;&gt;</font>
+                            
+
+                        </pre>
+      <div
+        style="border-left:10px solid dodgerblue; width:auto;height:auto;border-bottom:1px solid black; border-top:1px solid black">
+
+        <h3 style="color: black; border:#00bcd4 solid 2px; margin-top: 0px;">Important notes</h4>
+          <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;  background-color: azure;">
+  <ul id="xxx" style="margin-left:30Px"> <li>Use the HTML &lt;img&gt; element to define an image.</li>
+   <li> Use the HTML src attribute to define the URL of the image</li>
+   <li>Use the HTML alt attribute to define an alternate text for
+     an image, if it cannot be displayed.</li>
+     <li>Use the HTML width and height attributes to define the size
+     of the image.</li>
+     <li>Use the CSS width and height properties to define the size
+     of the image (alternatively).</li>
+     <li>Use the CSS float property to let the image float.</li>
+    <li>Use the HTML &lt;map&gt; element to define an image-map.</li>
+                    <li>Use the HTML &lt;area&gt; element to define the clickable areas
+     in the image-map.</li>
+     <li>Use the HTML &lt;img&gt;'s element usemap attribute to point to
+     an image-map.</li>
+     <li>Use the HTML &lt;picture&gt; element to show different images
+     for different devices   </li>
+    </ul> 
+    
+
+</pre>
+      </div>
+
+
+      <!--Element 88888888888888888-->
+
+
+      <div>
+        <h1 id="elmt7"
+          style="border-left:9px solid dodgerblue; border-bottom:2px solid black; border-top:2px solid black;">HTML
+          Table</h1>
+        <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;">
+ <b>HTML Table</b>
+
+  *An HTML table is defined with the &lt;table&gt; tag.
+  *Each table row is defined with the &lt;tr&gt; tag. A table header 
+   is defined with the &lt;th&gt; tag. By default, table headings are 
+   bold and centered.
+  *A table data/cell is defined with the &lt;td&gt; tag.
+  <br> <br>
+<font color="dodgerblue">Table example</font></pre>
+        <table width="100%" height="auto" border=2px>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>age</th>
+            </th>
+
+          <tr>
+            <td>Pramod</td>
+            <td>sahu</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>Pranay</td>
+            <td>kardekar</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Sahil</td>
+            <td>yadav</td>
+            <td>22</td>
+          </tr>
+
+        </table> <br> <br>
+        <div
+          style="border-left:10px solid dodgerblue; width:auto;height:auto;border-bottom:1px solid black; border-top:1px solid black">
+
+          <h3 style="color: black; border:#00bcd4 solid 2px; margin-top: 0px;">Example code</h3>
+          <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;  background-color: azure;">
+        &lt;table style=&quot;width:100%&quot;&gt;<br />
+        &lt;tr&gt;<br />
+          &lt;th&gt;Firstname&lt;/th&gt;<br />
+          &lt;th&gt;Lastname&lt;/th&gt; <br />
+          &lt;th&gt;Age&lt;/th&gt;<br />
+        &lt;/tr&gt;<br />
+        &lt;tr&gt;<br />
+          &lt;td&gt;Pramod&lt;/td&gt;<br />
+          &lt;td&gt;Sahu&lt;/td&gt; <br />
+          &lt;td&gt;21&lt;/td&gt;<br />
+        &lt;/tr&gt;<br />
+        &lt;tr&gt;<br />
+          &lt;td&gt;Pranay&lt;/td&gt;<br />
+          &lt;td&gt;Kardekar&lt;/td&gt; <br />
+          &lt;td&gt;22&lt;/td&gt;<br />
+        &lt;/tr&gt;<br />
+      &lt;/table&gt;
+ 
+</pre>
+        </div>
+
+        <!--Element 9999999999999999999999999999999999999999999-->
+
+        <div>
+          <h1 id="elmt9"
+            style="border-left:9px solid dodgerblue; border-bottom:2px solid black; border-top:2px solid black;">HTML
+            Head</h1>
+          <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;">
+ <b>HTML Head</b>
+
+  *The &lt;head&gt; element is a container for metadata (data about data)
+  and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.<br />
+  *HTML metadata is data about the HTML document. Metadata is not
+   displayed.<br />
+  *Metadata typically define the document title, character set, styles,
+   links, scripts, and other meta information.<br />
+  *The following tags describe metadata: &lt;title&gt;,&lt;style&gt;, &lt;meta&gt;,
+   &lt;link&gt;, &lt;script&gt;, and &lt;base&gt;.
+  <br> <br>
+ &nbsp<font color="dodgerblue"><b>HTML title</b></font>
+  *The &lt;title&gt; element defines the title of the document, and is
+   required in all HTML/XHTML documents.<br />
+
+  <b>The &lt;title&gt; element:</b>
+  defines a title in the browser tab.
+  provides a title for the page when it is added to favorites.
+  displays a title for the page in search engine results.
+    </pre>
+
+          <div
+            style="border-left:10px solid dodgerblue; width:auto;height:auto;border-bottom:1px solid black; border-top:1px solid black">
+
+            <h3 style="color: black; border:#00bcd4 solid 2px; margin-top: 0px;">Example code</h3>
+            <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;  background-color: azure;">
+        &lt;!DOCTYPE html&gt;<br />
+        &lt;html&gt;<br />
+        &lt;head&gt;<br />
+          &lt;title&gt;Page Title&lt;/title&gt;<br />
+        &lt;/head&gt;<br />
+        &lt;body&gt;<br />
+        The content of the document......<br />
+        &lt;/body&gt;<br />
+        &lt;/html&gt;
+        </pre>
+          </div>
+
+
+          <!-- Element 10......................-->
+          <div>
+            <h1 id="elmt10"
+              style="border-left:9px solid dodgerblue; border-bottom:2px solid black; border-top:2px solid black;">HTML
+              List</h1>
+            <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;">
+ <b> Unordered HTML List</b>
+
+  *An unordered list starts with the &lt;ul&gt; tag. Each list item starts
+   with the &lt;li&gt; tag.
+  *The list items will be marked with bullets (small black circles)
+   by default: 
+
+   <font color="dodgerblue"><b>The CSS list-style-type property is used to define
+    the style of the list item marker:</b></font>
+   <table width="100%" height="auto" border=2px >
+        <tr>
+        <th>Value</th>
+        <th>Description</th>
+        
+        <tr><td>disc</td>
+        <td>Sets the list item marker to a bullet (default)</td>
+       </tr>
+        <tr><td>circle</td>
+        <td>Sets the list item marker to a circle</td>
+           </tr>
+            <tr><td>square</td>
+        <td>Sets the list item marker to a square</td>
+                </tr>
+                <tr><td>none</td>
+        <td>Sets the list item will not be marked</td>
+                    </tr>
+               
+    </table>
+
+
+</pre>
+
+            <h3 style="margin-left:30Px">An Unordered HTML List</h3>
+
+            <ul style="margin-left:50Px">
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Milk</li>
+            </ul>
+
+            <h3 style="margin-left:30Px">An Ordered HTML List</h2>
+
+              <ol style="margin-left:50Px">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ol>
+
+
+
+
+
+
+              <div
+                style="border-left:10px solid dodgerblue; width:auto;height:auto;border-bottom:1px solid black; border-top:1px solid black">
+
+                <h3 style="color: black; border:#00bcd4 solid 2px; margin-top: 0px;">Example code</h3>
+                <pre style="font-weight:400; font-size: 20px ; word-spacing: 2px;  background-color: azure;">
+        &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;The start attribute&lt;/h2&gt;
+&lt;p&gt;By default, an ordered list will start counting from 1. Use the
+start attribute to start counting from a specified number:&lt;/p&gt;
+
+&lt;ol start=&quot;50&quot;&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type=&quot;I&quot; start=&quot;50&quot;&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/head&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;body&gt;&lt;br /&gt;
+The content of the document......&lt;br /&gt;
+&lt;/body&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;/html&gt;
+        </pre>
+              </div>
+
+
+
+
+
+
+          </div>
+
+
+          <script>
+            window.onscroll = function () { myFunction() };
+
+            var header = document.getElementById("menu");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+          </script>
+
+          <img src="pic.jpg" alt="Pineapple" width="100%" height="100%">
+          <style>
+            img {
+              -webkit-filter: blur(5px);
+              /* Safari 6.0 - 9.0 */
+              filter: blur(5px);
+            }
+          </style>
+
+
+
+
+</body>
+
+</html>

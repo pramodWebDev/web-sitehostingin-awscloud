@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeCrush.com</title>
+    <style>
+        #heading {
+            margin-top: 0px;
+            font-family: verdana;
+            color: rgb(51, 47, 47);
+            font-size: 40px;
+            padding-top: 0px;
+            background-color: rgb(255, 250, 250);
+
+
+
+
+        }
+
+        #menu ul {
+            list-style: none;
+            display: inline;
+
+
+        }
+
+        * {
+            margin: none;
+            padding: 0px;
+        }
+
+        #menu ul li {
+            background-color: #17141E;
+            width: 227px;
+            height: 40px;
+            border: 0px solid;
+            padding-top: 15px;
+
+            position: relative;
+            margin-left: 0px;
+            float: left;
+            text-align: center;
+            color: white;
+            font-family: verdana;
+            z-index: 1;
+
+
+        }
+
+        #menu ul ul {
+            display: none;
+
+        }
+
+        #menu ul li:hover {
+            background-color: dodgerblue;
+            box-shadow: 0px 2px 2px 1px grey;
+        }
+
+        #menu ul li:hover ul {
+
+            display: block;
+
+            left: 0px;
+            padding: 0px;
+            position: relative;
+            top: 55%;
+            margin: 0px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 10px 3px rgb(87, 85, 85);
+
+
+        }
+
+        body {
+            margin: 0px;
+            background-color: rgb(228, 225, 225);
+
+
+        }
+
+        #bx {
+            position: relative;
+            top: 10%;
+            left: 25%;
+            width: 70%;
+            height: 70%;
+            border: 1px solid black;
+            background: rgb(82, 185, 226);
+            color: white;
+            background-attachment: scroll;
+
+        }
+
+        #low {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 5%;
+            background-color: #17141E;
+
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding-bottom: 15px;
+        }
+
+
+       
+
+        input[type="text"] {
+            position: relative;
+
+            top: -15px;
+
+            border: none;
+            border-bottom: 1px solid rgb(173, 172, 172);
+
+            background: transparent;
+            height: 23px;
+            width: 100%;
+        }
+
+        input[type="password"] {
+            position: relative;
+
+            top: -15px;
+            border: none;
+            border-bottom: 1px solid rgb(173, 172, 172);
+            background: transparent;
+            height: 23px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+
+            border: 2px solid black;
+            border-radius: 12px;
+            width: 50%;
+            height: 30px;
+
+
+
+        }
+
+        input[type="submit"]:hover {
+            color: white;
+            box-shadow: 0px 0px 1px 1px white;
+            background-color: dodgerblue;
+
+
+
+        }
+
+        #H {
+            position: relative;
+            top: -25px;
+            left: -5px;
+            width: 100%;
+            border: solid 5px dodgerblue;
+            background-color: dodgerblue;
+            color: white;
+
+
+        }
+
+        h2 {
+            position: relative;
+            text-align: center;
+            top: -25px;
+
+            left: -5px;
+            width: 100%;
+            border: solid 5px dodgerblue;
+            background-color: dodgerblue;
+            color: white;
+
+
+
+        }
+
+        #ntfcn {
+            position: absolute;
+            top: 30%;
+            left: 5%;
+            box-shadow: 0px 0px 5px 1px black;
+            padding: 5px;
+            width: 20%;
+            height: 50%;
+            background-color: #17141E;
+            color: white;
+            font-family: sans-serif;
+            border-radius: 9px;
+            border: 3px solid dodgerblue;
+
+
+        }
+
+
+
+        #login {
+            position: absolute;
+            top: 30%;
+
+            right: 5%;
+            box-shadow: 0px 0px 5px 1px black;
+            padding: 5px;
+            width: 20%;
+            height: 50%;
+            background-color: #17141E;
+            border: 3px solid dodgerblue;
+            color: white;
+            font-family: sans-serif;
+            border-radius: 9px;
+            /*      z-index: -1;*/
+        }
+
+        #mdl {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            box-shadow: 0px 0px 5px 1px black;
+            padding: 5px;
+            width: 40%;
+            height: 50%;
+            background-color: dodgerblue;
+            color: white;
+            font-family: sans-serif;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="heading"><a href="index.html" style="text-decoration:none; color:black">
+
+                &nbsp&nbsp&nbsp&nbspcodeCrush<font color="dodgerblue">.com</font>
+                <right>
+            </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <font size="3px" style="color:dodgerblue;font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><i>Coding is the new literacy, Don't be afriad of
+                coding, crush it..</i></font>
+            </right>
+
+        </div>
+        <div id="menu">
+            <ul>
+                <li>=</a>
+                    <ul>
+                        <li><a href="#" style="color:white ;text-decoration:none;">Tutorials</a></li>
+                        <li>Reference</li>
+                        <li>Example</li>
+                        <li>Certificate</li>
+                    </ul>
+                </li>
+                <li><a href="link.html" style="color:white ;text-decoration:none;">HTML</a>
+
+                </li>
+                <li><a href="csslink.html" style="color:white ;text-decoration:none;">CSS</a>
+
+                </li>
+                <li><a href="javascriptlink.html" style="color:white ;text-decoration:none;">javaScript</a></li>
+                <li><a href="mysqllink.html" style="color:white ;text-decoration:none;">MySQL</a></li>
+                <li><a href="phplink.html" style="color:white ;text-decoration:none;">PHP</a></li>
+
+            </ul>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <div id="login">
+
+        <h2 id="H" align="center">Login here</h2>
+        <form action="lgntst.php" method="GET">
+            <p> User name</p>
+            <input type="text" placeholder="Enter user name" name="txt">
+            <p> password</p>
+            <input type="password" placeholder="Enter password" name="pswd">
+            <br><br>
+
+            <center><input type="submit" placeholder="Login" id="sbmt"></center>
+            <a href="#">Forgot password</a>
+
+        </form>
+
+    </div>
+    <div id="ntfcn">
+        <h2>Online courses</h2>
+        <Ul class="xxxxxx" style="padding-left:20px;">
+            <li>Java crash course</li><br>
+            <li>c & c++</li><br>
+            <li>Pythone</li><br>
+            <li>Ruby</li><br>
+            <li>.NET</li>
+        </ul>
+
+    </div>
+    <div id="mdl">
+        <img class="mySlides" src="c.jpg" alt="image" style="width:100%; height:100%;">
+        <img class="mySlides" src="Java.jpg" alt="image" style="width:100%;height:100%;">
+        <img class="mySlides" src="html.jpg" alt="image" style="width:100%;height:100%;">
+        <img class="mySlides" src="css.jpg" alt="image" style="width:100%;height:100%;">
+
+
+    </div>
+    <div id="low">
+        <center><span><a href="aboutnew.html" style="text-decoration:none ;position:relative;top:15px; padding:5px;color:white;  border: 1px solid dodgerblue; border-radius: 20px;">About us</a></span></center>
+    </div>
+
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>
